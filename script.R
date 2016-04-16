@@ -13,5 +13,3 @@ find_name(ids)
 # 3) Now read in the cards and create the summary
 cards = read_cards()
 summary(cards)
-
-# test
