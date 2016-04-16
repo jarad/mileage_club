@@ -1,6 +1,6 @@
 library(mileageClub)
 
-ids = readr::read_csv('data/id.csv')
+ids = readr::read_csv('data/id.csv'); ids$id_text = NULL
 
 # 1) Update days.csv
 # 2) Create a new YYYYMMDD.csv file with 'id' as the header then all the IDs of cards that
@@ -14,5 +14,5 @@ find_name(ids)
 
 # 3) Now read in the cards and create the summary
 cards = read_cards()
-summary(cards)
+summary(cards, ids)
 
