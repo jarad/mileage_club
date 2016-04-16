@@ -1,4 +1,3 @@
-library(dplyr)
 library(mileageClub)
 
 ids = readr::read_csv('data/id.csv')
