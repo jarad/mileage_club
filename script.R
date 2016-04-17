@@ -17,8 +17,9 @@ cards = read_cards()
 summary(cards, ids)
 
 # 4) Create 10-mile Certificates
-#    a) Save appropriate certificate file on 'Certificate' tab
-#    b) Click on certificates/10mile.dotx and say 'No'
-#    c) Click 'Mailings' and 'Select Receipts > Use an existing list...'
-#    d) Open saved file from a), most likely in Downloads
-#    e) Check document and print
+#    a) Run summary line, click open in browser
+#    b) Save appropriate certificate file on 'Certificate' tab
+#    c) Click on certificates/10mile.dotx and say 'No'
+#    d) Click 'Mailings' and 'Select Receipts > Use an existing list...'
+#    e) Open saved file from a), most likely in Downloads
+#    f) Preview Results, Click Finish & Merge, print documents, select All and click ok
