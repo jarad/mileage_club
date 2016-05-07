@@ -35,6 +35,7 @@ summary(cards, ids)
 
 
 ## Prediction
+library(dplyr)
 days = read.csv('data/days.csv') %>%
   mutate(date = as.Date(date, '%m/%d/%Y'))
 
@@ -45,7 +46,7 @@ d = merge(cards,days) %>%
             day = max(day+3)) # first cards turned in on day 4, so add 3 to day
 
 total_days = max(d$day)
-days_remaining = 7
+days_remaining = 
 
 over25 = d %>% 
   mutate(expected_miles = current_miles + current_miles/day * (days_remaining+total_days-day)) %>%
@@ -53,10 +54,10 @@ over25 = d %>%
 
 # over25 %>% filter(expected_miles>=40, current_miles>15) %>% arrange(-expected_miles)
 
-over25 %>% 
-  filter(current_miles > 15) %>% 
-  arrange(-expected_miles) %>% 
-  head(20)
+# over25 %>% 
+#   filter(current_miles > 15) %>% 
+#   arrange(-expected_miles) %>% 
+#   head(20)
 
 over25 %>%
   filter(expected_miles > 25) %>%
