@@ -6,4 +6,7 @@ check_names = function(YYYYMMDD) {
     select(id,last,first,grade,teacher)
 }
 
-check_names("20160523")
+# Example 
+check_names("20160520")
+
+.210
