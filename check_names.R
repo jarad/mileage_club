@@ -7,6 +7,4 @@ check_names = function(YYYYMMDD) {
 }
 
 # Example 
-check_names("20160520")
-
-.210
+check_names("20160523")

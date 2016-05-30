@@ -15,7 +15,7 @@ ids = readr::read_csv('data/id.csv'); ids$id_text = NULL
 #    be to copy a previous file and put in the IDs. 
 
 # If you need to find a student's name or ID
-find_name(id)
+find_name(ids)
 
 # If you want to learn to use git, you can commit the changes to days.csv and the added files.
 
